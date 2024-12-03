@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/RFD7jbdm)
 # Project 01 For NeXT CS
-### Name0: YOUR NAME HERE
-### Name1: OTHER NAME HERE (delete this line if you are working solo)
+### Name0: Ryan Gao
+### Name1: 
 ---
 
 ### Overview
@@ -17,17 +17,23 @@ This project will be completed in phases. The first phase will be to work on thi
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: CHOOSE WISELY
+#### Selected Project: Conway's Game of Life
 
 ### Necessary Features
-What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
+Create a grid, displaying black & white squares.
+Said grid will need to be interactable with a mouse, on click, change state and color.
+Checking for neighbors:
+  Live cell w/ < 2 neighbors -> die
+  Live cell w/ 2-3 neighbors -> survive
+  Live cell with > 3 neighbors -> die
+  Dead cell with = 3 neighbors -> alive
+Run the program all at once for every square, then change display.
 
-YOUR ANSWERS HERE
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-YOUR ANSWERS HERE
+Change Colors
 
 ### Array Usage
 How will you be using arrays in this project?
@@ -36,18 +42,18 @@ How will you be using arrays in this project?
 - YOUR ANSER HERE
 
 2D Array:
-- YOUR ANSWER HERE
+- Grid for conway's
 
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
-
+Space to start running game of life
+R to reset/clear
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: N/A
+- Mouse pressed: Change a live tile -> dead, vice versa
 
 
 ### Classes
