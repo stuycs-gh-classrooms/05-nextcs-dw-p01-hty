@@ -59,14 +59,14 @@ Mouse Control:
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+Grid
 - Instance variables:
   - LIST INSTANCE VARS HERE
 - METHODS
   - LIST METHODS HERE
 
-CLASS NAME1
+Cell
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - xpos,ypos,size,
 - METHODS
   - LIST METHODS HERE
