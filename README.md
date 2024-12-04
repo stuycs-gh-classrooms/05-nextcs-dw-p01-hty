@@ -69,4 +69,6 @@ Cell
 - Instance variables:
   - xpos,ypos,size,
 - METHODS
-  - LIST METHODS HERE
+  - display()
+  - die()
+  - spawn()
