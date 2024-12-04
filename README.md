@@ -62,13 +62,16 @@ What classes will you be creating for this project? Include the instance variabl
 
 Grid
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - Cols
+  - Rows
+  - 
 - METHODS
-  - LIST METHODS HERE
+  - displayGrid()
+  - runCells()
 
 Cell
 - Instance variables:
-  - xpos,ypos,size,
+  - xpos,ypos,size,state
 - METHODS
   - display()
   - die()
