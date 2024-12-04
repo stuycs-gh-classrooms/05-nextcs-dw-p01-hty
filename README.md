@@ -23,10 +23,10 @@ This project will be completed in phases. The first phase will be to work on thi
 Create a grid, displaying black & white squares.
 Said grid will need to be interactable with a mouse, on click, change state and color.
 Checking for neighbors:
-  Live cell w/ < 2 neighbors -> die
-  Live cell w/ 2-3 neighbors -> survive
-  Live cell with > 3 neighbors -> die
-  Dead cell with = 3 neighbors -> alive
+  - Live cell w/ < 2 neighbors -> die
+  - Live cell w/ 2-3 neighbors -> survive
+  - Live cell with > 3 neighbors -> die
+  - Dead cell with = 3 neighbors -> alive
 Run the program all at once for every square, then change display.
 
 
