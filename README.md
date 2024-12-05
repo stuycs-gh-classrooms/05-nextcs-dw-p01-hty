@@ -34,14 +34,14 @@ Run the program all at once for every square, then change display.
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-Change Colors
+Allow users to select different color palettes for grid
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
 - YOUR ANSER HERE
-
+Grid, Conway's
 2D Array:
 - Grid for conway's
 
