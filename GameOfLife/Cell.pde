@@ -27,11 +27,3 @@ class Cell{
     state = nextState;
   }
   
-  
-  
-  
-  
-  
-  
-  
-}
