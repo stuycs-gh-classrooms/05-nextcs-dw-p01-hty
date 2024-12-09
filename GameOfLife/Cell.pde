@@ -10,19 +10,10 @@ class Cell{
   }
   
   void display(){
-   square(pos.x,pos.y,sz);
-   if(this.state = 1){
+   if(state == 1){
+     fill(255);
    }
+   else{fill(0);}
+  square(pos.x,pos.y,sz);
   }
-  void stateChange(){
-    if state
-  }
-  
-  
-  
-  
-  
-  
-  
-  
 }
