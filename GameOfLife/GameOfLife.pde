@@ -1,6 +1,6 @@
 int alive = 1;
 int dead = 0;
-int cellDensity = 60;
+int cellDensity = 30;
 int numRows = 100;
 int numCols = 100;
 Grid plate;

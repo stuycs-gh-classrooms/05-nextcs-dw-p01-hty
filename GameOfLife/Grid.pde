@@ -19,6 +19,13 @@ class Grid{
       }
     }
   }
+  void step(){
+    for (int r = 0; r < Field.length; r++) {
+      for (int c = 0; c < Field[r].length; c++) {
+        int numAlive = 0;
+        
+      }
+    }
   
   
   
