@@ -23,9 +23,11 @@ class Grid{
     for (int r = 0; r < Field.length; r++) {
       for (int c = 0; c < Field[r].length; c++) {
         int numAlive = 0;
+        for(int x = r - 1;
         
       }
     }
+  }
   
   
   
