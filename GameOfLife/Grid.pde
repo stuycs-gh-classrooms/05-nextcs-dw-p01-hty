@@ -14,10 +14,18 @@ class Grid{
           st = 1;
         }
         else{st = 0;}
-        Field[r][c] = new Cell(int(width / Field.length * r), int(height / Field[r].length * c), int(width / Field.length), st);
+        Field[r][c] = new Cell(width / Field[r].length * c, height / Field.length * r, width / Field.length, st); //(int x, int y, int sz,int st)
+        Field[r][c].display();
       }
     }
   }
+  void step(){
+    for (int r = 0; r < Field.length; r++) {
+      for (int c = 0; c < Field[r].length; c++) {
+        int numAlive = 0;
+        
+      }
+    }
   
   
   

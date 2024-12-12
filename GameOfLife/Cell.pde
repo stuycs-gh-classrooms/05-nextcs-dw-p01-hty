@@ -26,4 +26,5 @@ class Cell{
   void displayChange(){
     state = nextState;
   }
+}
   
