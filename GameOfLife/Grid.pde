@@ -27,7 +27,7 @@ class Grid{
         int numAlive = 0;
         for(int x = r-1; x <= r+1; x++){//check x, left to right
           println("checking left - right");
-          for(int y = c - 1; x <= r + 1; y++){//check y, top down
+          for(int y = c - 1; y <= c + 1; y++){//check y, top down
             if(x >= 0 && y >= 0 && x <= Field.length && y <= Field[r].length){ //out of bounds?
               
               if(x != r && y != c){//don't check self
