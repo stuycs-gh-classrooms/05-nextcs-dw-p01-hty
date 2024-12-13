@@ -30,6 +30,9 @@ void keyPressed(){
   if(key == 'p'){
     plate.populate(cellDensity);
   }
+  if(key == 'r'){
+    plate.reset();
+  }
 }
 void mousePressed(){
   if(mousePressed == true){

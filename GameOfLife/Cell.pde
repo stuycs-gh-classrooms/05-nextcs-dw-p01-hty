@@ -26,5 +26,11 @@ class Cell{
   void displayChange(){
     state = nextState;
   }
+  void wipe(){
+    if(state == alive){
+      nextState = 0;
+    }
+  }
+  
 }
   

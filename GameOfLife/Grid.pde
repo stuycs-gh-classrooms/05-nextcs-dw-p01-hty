@@ -49,13 +49,25 @@ class Grid{
     for (int r = 0; r < Field.length; r++) {
       for (int c = 0; c < Field[r].length; c++) { //check every cell
         Field[r][c].displayChange();
+        Field[r][c].display();
       }
     }
   }
   
   void flip(int mX, int mY){
-    
-    
+    int r = floor(mX / width * 100);
+    int c = floor(mY / height * 100);
+    Field[r][c].stateChange();
+    Field[r][c].displayChange();
+  }
+  void reset(){
+    for (int r = 0; r < Field.length; r++) {
+      for (int c = 0; c < Field[r].length; c++) {
+        Field[r][c].wipe();
+        shift();
+      }
+    }
+  }
   
   
 }
