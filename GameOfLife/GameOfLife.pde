@@ -4,7 +4,7 @@ int cellDensity = 30;
 int numRows = 100;
 int numCols = 100;
 Grid plate;
-boolean start;
+boolean start = false;
 
 void setup(){
   size(500,500);
@@ -13,29 +13,34 @@ void setup(){
 }
 
 void draw(){
-  if(start){
+  if(start == true){
+    //println("moving objects");
     plate.step();
     plate.shift();
   }
 }
     
 void keyPressed(){
-  if(key == ' '){
-    if(start == false){
-     start = true;
-    }
-    else{start = false;
-    }
+  if (key == ' ' && start == false) {
+    start = true;
+    println("started");
+  } else if (key == ' ' && start == true) {
+    start = false;
+    println("stopped");
   }
+  
   if(key == 'p'){
     plate.populate(cellDensity);
   }
+  
   if(key == 'r'){
     plate.reset();
   }
 }
 void mousePressed(){
   if(mousePressed == true){
+    plate.flip(mouseX,mouseY);
+    println("cell flipped");
   }
 }
     

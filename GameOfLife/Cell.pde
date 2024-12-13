@@ -17,12 +17,14 @@ class Cell{
    else{fill(255);}
    square(pos.x,pos.y,size);
   }
+  
   void stateChange(){
     if(state == alive){
       nextState = 0;
     }
     else{nextState = 1;}
   }
+  
   void displayChange(){
     state = nextState;
   }
