@@ -19,11 +19,27 @@ class Grid{
       }
     }
   }
+  
   void step(){
     for (int r = 0; r < Field.length; r++) {
-      for (int c = 0; c < Field[r].length; c++) {
+      for (int c = 0; c < Field[r].length; c++) { //check every cell
         int numAlive = 0;
-        for(int x = r - 1;
+        for(int x = r-1; x <= r+1; x++){//check x, left to right
+          for(int y = c - 1; x <= r + 1; y++){//check y, top down
+            if(x >= 0 && y >= 0 && x <= Field.length && y <= Field[r].length){ //out of bounds?
+              if(x != r && y != c){//don't check self
+                numAlive++;
+              }
+            }
+          }
+        }
+        
+        if(numAlive < 2 || numAlive > 3 && Field[r][c].state == 1){ // less than 2/more than 3 = die
+          Field[r][c].stateChange();
+        }
+        else if(numAlive == 3 && Field[r][c].state == 0){ //if dead & 3 neighbors -> lives
+          Field[r][c].stateChange();
+        }
         
       }
     }
