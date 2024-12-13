@@ -10,6 +10,7 @@ void setup(){
   size(500,500);
   frameRate(60);
   plate = new Grid(numRows,numCols,cellDensity);
+  plate.reset();
 }
 
 void draw(){

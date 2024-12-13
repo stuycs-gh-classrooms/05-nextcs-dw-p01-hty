@@ -37,9 +37,10 @@ class Grid{
             }
           }
         }
-        println("killing");
+        //;
         if(numAlive < 2 || numAlive > 3 && Field[r][c].state == 1){ // less than 2/more than 3 = die
           Field[r][c].stateChange();
+          println("killing");
         }
         else if(numAlive == 3 && Field[r][c].state == 0){ //if dead & 3 neighbors -> lives
           Field[r][c].stateChange();
@@ -69,10 +70,9 @@ class Grid{
   void reset(){
     for (int r = 0; r < Field.length; r++) {
       for (int c = 0; c < Field[r].length; c++) {
-        Field[r][c].wipe();
-        Field[r][c].displayChange();
+        Field[r][c].state = 0;
         Field[r][c].display();
-        println("reset");
+        //println("reset");
       }
     }
   }

@@ -14,23 +14,25 @@ class Cell{
    if(state == 1){
      fill(0);
    }
-   else{fill(255);}
+   else if(state == 0){fill(255);}
    square(pos.x,pos.y,size);
   }
   
   void stateChange(){
-    if(state == alive){
+    if(state == 1){
       nextState = 0;
     }
     else{nextState = 1;}
   }
   
   void displayChange(){
+    if(state != nextState){
     state = nextState;
+    }
   }
   void wipe(){
     if(state == alive){
-      nextState = 0;
+      state = 0;
     }
   }
   
