@@ -3,7 +3,7 @@ class Grid{
   
   Grid(int numRows, int numCols, int popDensity){
     Field = new Cell[numRows][numCols];
-    populate(popDensity);
+    //populate(popDensity);
   }//constructor
   
   void populate(int popDensity){
@@ -45,8 +45,17 @@ class Grid{
     }
   }
   
+  void shift(){
+    for (int r = 0; r < Field.length; r++) {
+      for (int c = 0; c < Field[r].length; c++) { //check every cell
+        Field[r][c].displayChange();
+      }
+    }
+  }
   
-  
+  void flip(int mX, int mY){
+    
+    
   
   
 }
